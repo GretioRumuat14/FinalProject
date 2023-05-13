@@ -4,7 +4,7 @@ import { SplashScreen } from "./pages";
 
 const App = () => {
   return (
-    <View>
+    <View style={{flex: 1, backgroundColor: 'black'}}>
       <SplashScreen/>
     </View>
   )

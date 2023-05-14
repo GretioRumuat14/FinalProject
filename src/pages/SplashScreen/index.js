@@ -1,16 +1,21 @@
-import React, { memo } from "react";
+import React from "react";
 import {View, Text, Image, StyleSheet, TouchableOpacity} from 'react-native'
 import { BgSplashScreen } from "../../assets";
 
 const SplashScreen = () => {
     return (
-        <View style={styles.container}>
+        <View
+         style={styles.container}>
             <Image source={BgSplashScreen} />
             <View style={styles.textContainer}>
                 <Text style={styles.text}>Coffe so good, your taste buds will love it</Text>
                 <Text style={styles.text2}>The best grain, the finest roast, the powerful flavour</Text>
             </View>
-            <TouchableOpacity style={styles.button} activeOpacity={0.8}>
+            <TouchableOpacity 
+            style={styles.button} 
+            activeOpacity={0.8}
+            // onPress={() => navigation.navigate('Home')}
+            >
                 <Text style={styles.buttonText}>Get Started</Text>
             </TouchableOpacity>
         </View>
